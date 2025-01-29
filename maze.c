@@ -112,6 +112,7 @@ void drive_car(struct maptype* mapinfo, struct cartype* car) {
 
 	while (car->position.x >= 0 && car->position.x < rows && car->position.y >= 0 && car->position.y < cols) {
 		sleep(2);
+		system("clear");
 		showmap(mapinfo, car);
         for(int i =0; i < 4; i++)
         {
